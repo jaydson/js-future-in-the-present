@@ -1,0 +1,31 @@
+{
+  "name": "js-future-in-the-present",
+  "description": "JavaScript's future, in the present",
+  "keywords": [
+    "es6",
+    "JavaScript"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxkueng/js-future-in-the-present.git"
+  },
+  "author": "Jaydson Gomes <jayalemao@gmail.com> (http://jaydson.org/)",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-traceur": "0.0.3",
+    "grunt-contrib-copy": "~0.5.0"
+  },
+  "engines": [
+    "node >=0.4.0"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://jaydson.mit-license.org/"
+    }
+  ]
+}
