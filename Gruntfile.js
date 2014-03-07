@@ -14,8 +14,12 @@ module.exports = function (grunt) {
 
         traceur: {
 			options: {
-				/* Turn on the experimental features */
-				experimental : false
+				/* Turn on some of the experimental features */
+				blockBinding : true,
+				symbols : true,
+				deferredFunctions : true,
+				types : true,
+				annotations : true
 			},
 			classes : {
 				files:{

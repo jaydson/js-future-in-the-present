@@ -1,27 +1,38 @@
-class Polygon {
-	constructor(height, width) { //class constructor
-		this.name = 'Polygon';
-		this.height = height;
-		this.width = width;
-	}
+class Animal {
 
-	sayName() { //class method
-		console.log('Hi, I am a', this.name + '.');
-	}
-}
+	constructor(name) {
+        this.name = name;
+    }
 
-class Square extends Polygon {
-	constructor(length) {
-		super(length, length); //call the parent method with super
-		this.name = 'Square';
-	}
-
-	get area() { //calculated attribute getter
-		return this.height * this.width;
+	breathe () {
+		console.log('Every animal breathes');
 	}
 }
 
-var s = new Square(5);
+class Dog extends Animal {
+    constructor(name) {
+        super(name);
+    }
+  
+    bark() {
+        console.log("Woof! Woof! " + this.name + ' is barking');
+    }
+}
 
-s.sayName();
-console.log(s.area);
+class Cat extends Animal {
+    constructor(name) {
+        super(name);
+    }
+  
+    meow() {
+        console.log("Meow! Meow! " + this.name + ' is meowing');
+    }
+}
+
+let dog = new Dog('Costelinha');
+dog.breathe();
+dog.bark();
+
+let cat = new Cat('Mingau');
+cat.breathe();
+cat.meow();
