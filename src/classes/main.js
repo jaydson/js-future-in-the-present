@@ -30,9 +30,9 @@ class Cat extends Animal {
 }
 
 let dog = new Dog('Costelinha');
-dog.breathe();
-dog.bark();
+dog.breathe(); // Every animal breathes 
+dog.bark();    // Woof! Woof! Costelinha is barking 
 
 let cat = new Cat('Mingau');
-cat.breathe();
-cat.meow();
+cat.breathe(); // Every animal breathes
+cat.meow();    // Meow! Meow! Mingau is meowing 

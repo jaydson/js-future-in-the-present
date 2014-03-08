@@ -12,6 +12,30 @@ module.exports = function (grunt) {
             }
         },
 
+		concat: {
+			options: {
+				separator: ';',
+			},
+			classes : {
+				dist: {
+					src: ['src/lib/traceur-runtime.js','dist/classes/pre-compiled.js'],
+					dest: 'dist/classes/compiled.js',
+				}
+			}
+		},
+
+        uglify: {
+            options: {
+				mangle: false
+            },
+
+            classes : {
+                files: {
+                	'dist/classes/compiled-min.js': ['dist/classes/compiled.js']
+                }
+            }
+        },
+
         traceur: {
 			options: {
 				/* Turn on some of the experimental features */
@@ -23,7 +47,7 @@ module.exports = function (grunt) {
 			},
 			classes : {
 				files:{
-					'dist/classes/compiled.js': ['src/classes/main.js']
+					'dist/classes/pre-compiled.js': ['src/classes/main.js']
 				}
 			},
 		}
@@ -32,7 +56,9 @@ module.exports = function (grunt) {
 	/* Load tasks */
     grunt.loadNpmTasks('grunt-traceur');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     /* Tasks */
-    grunt.registerTask('default', ['copy:main','traceur']);
+    grunt.registerTask('default', ['traceur:classes','concat:classes','uglify:classes']);
 }

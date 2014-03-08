@@ -9,7 +9,7 @@
   "homepage": "http://",
   "repository": {
     "type": "git",
-    "url": "git://github.com/maxkueng/js-future-in-the-present.git"
+    "url": "git://github.com/jaydson/js-future-in-the-present.git"
   },
   "author": "Jaydson Gomes <jayalemao@gmail.com> (http://jaydson.org/)",
   "contributors": [],
@@ -17,7 +17,9 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-traceur": "0.0.3",
-    "grunt-contrib-copy": "~0.5.0"
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.4.0"
   },
   "engines": [
     "node >=0.4.0"
