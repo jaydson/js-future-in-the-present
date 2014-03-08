@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module</title>
+	<script src="../../src/lib/traceur.js"></script>
+	<script src="../../src/lib/es6-module-loader.js"></script>
+</head>
+<body>
+	<script>
+		System.import('lib/crapmath').then(function(m) {
+			var crapmath = new m.CrapMath();
+			console.log(crapmath);
+			console.log(crapmath.awesomePlus(2,2));
+		}, function(e) {
+			console.log(e);
+		});
+	</script>
+</body>
+</html>
