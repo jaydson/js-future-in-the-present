@@ -16,11 +16,9 @@ module.exports = function (grunt) {
 			options: {
 				separator: ';',
 			},
-			classes : {
-				dist: {
-					src: ['src/lib/traceur-runtime.js','dist/classes/pre-compiled.js'],
-					dest: 'dist/classes/compiled.js',
-				}
+			main : {
+				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled.js'],
+				dest: 'dist/classes/compiled.js',
 			}
 		},
 
@@ -47,7 +45,7 @@ module.exports = function (grunt) {
 			},
 			classes : {
 				files:{
-					'dist/classes/pre-compiled.js': ['src/classes/main.js']
+					'tmp/pre-compiled.js': ['src/classes/main.js']
 				}
 			},
 		}
@@ -60,5 +58,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     /* Tasks */
-    grunt.registerTask('default', ['traceur:classes','concat:classes','uglify:classes']);
+    grunt.registerTask('default', ['traceur','concat']);
 }
