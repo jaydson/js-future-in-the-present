@@ -23,6 +23,10 @@ module.exports = function (grunt) {
 			arrows : {
 				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-arrows.js'],
 				dest: 'dist/arrows/compiled.js'
+			},
+			templatestrings : {
+				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-template-strings.js'],
+				dest: 'dist/template-strings/compiled.js'	
 			}
 		},
 
@@ -35,6 +39,7 @@ module.exports = function (grunt) {
                 files: {
                 	'dist/classes/compiled-min.js': ['dist/classes/compiled.js'],
                 	'dist/arrows/compiled-min.js': ['dist/arrows/compiled.js'],
+                	'dist/template-strings/compiled-min.js': ['dist/template-strings/compiled.js']
                 }
             }
         },
@@ -51,7 +56,8 @@ module.exports = function (grunt) {
 			classes : {
 				files:{
 					'tmp/pre-compiled-classes.js': ['src/classes/main.js'],
-					'tmp/pre-compiled-arrows.js': ['src/arrows/main.js']
+					'tmp/pre-compiled-arrows.js': ['src/arrows/main.js'],
+					'tmp/pre-compiled-template-strings.js': ['src/template-strings/main.js']
 				}
 			},
 		}

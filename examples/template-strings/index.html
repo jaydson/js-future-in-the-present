@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript's future, in the present - ES6 arrows example</title>
+
+		<!-- CodeMirror -->
+		<link rel="stylesheet" href="../vendor/codemirror-3.22/lib/codemirror.css">
+		<style type="text/css">
+			.CodeMirror {
+				height: 100%;
+			}
+		</style>
+		<script src="../vendor/codemirror-3.22/lib/codemirror.js"></script>
+		<script src="../vendor/codemirror-3.22/mode/javascript/javascript.js"></script>
+		<script src="../main.js"></script>
+
+		<!-- Compiled with traceur -->
+		<script src="/dist/template-strings/compiled.js"></script>
+	</head>
+	<body>
+		<h1>ES6 template strings</h1>
+		<textarea id="code">
+// Basic literal string creation
+console.log(`In JavaScript '\n' is a line-feed.`);
+
+// Multiline strings
+console.log(`In JavaScript this is
+ not legal.`);
+
+// Construct a DOM query
+var name = "Bob", time = "today";
+console.log(`Hello ${name}, how are you ${time}?`);
+		</textarea>
+	</body>
+</html>
