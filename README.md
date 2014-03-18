@@ -45,7 +45,7 @@ https://github.com/aaronfrost/grunt-traceur
 https://sublime.wbond.net/packages/JavaScriptNext%20-%20ES6%20Syntax  
 
 
-Online exemples:  
+Online examples:  
 http://www.es6fiddle.net/hrwzbik7/  
 http://www.es6fiddle.net/hst76yeh/  
 http://www.es6fiddle.net/hst6dkb7/  
