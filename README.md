@@ -4,8 +4,6 @@ js-future-in-the-present
 JavaScript's future in the present  
 
 Main resources:  
-
-Referências:  
 http://guybedford.com/es6-modules-today  
 http://square.github.io/es6-module-transpiler/  
 http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts  
