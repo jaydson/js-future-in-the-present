@@ -26,7 +26,19 @@ module.exports = function (grunt) {
 			},
 			templatestrings : {
 				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-template-strings.js'],
-				dest: 'dist/template-strings/compiled.js'	
+				dest: 'dist/template-strings/compiled.js'
+			},
+			parameters : {
+				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-parameters.js'],
+				dest: 'dist/parameters/compiled.js'
+			},
+			blockScope : {
+				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-block-scope.js'],
+				dest: 'dist/block-scope/compiled.js'
+			},
+			promises : {
+				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-promises.js'],
+				dest: 'dist/promises/compiled.js'
 			}
 		},
 
@@ -39,7 +51,10 @@ module.exports = function (grunt) {
                 files: {
                 	'dist/classes/compiled-min.js': ['dist/classes/compiled.js'],
                 	'dist/arrows/compiled-min.js': ['dist/arrows/compiled.js'],
-                	'dist/template-strings/compiled-min.js': ['dist/template-strings/compiled.js']
+                	'dist/template-strings/compiled-min.js': ['dist/template-strings/compiled.js'],
+                	'dist/parameters/compiled-min.js': ['dist/parameters/compiled.js'],
+                	'dist/block-scope/compiled-min.js': ['dist/block-scope/compiled.js'],
+                	'dist/promises/compiled-min.js': ['dist/promises/compiled.js']
                 }
             }
         },
@@ -53,11 +68,14 @@ module.exports = function (grunt) {
 				types : true,
 				annotations : true
 			},
-			classes : {
+			main : {
 				files:{
 					'tmp/pre-compiled-classes.js': ['src/classes/main.js'],
 					'tmp/pre-compiled-arrows.js': ['src/arrows/main.js'],
-					'tmp/pre-compiled-template-strings.js': ['src/template-strings/main.js']
+					'tmp/pre-compiled-template-strings.js': ['src/template-strings/main.js'],
+					'tmp/pre-compiled-parameters.js': ['src/parameters/main.js'],
+					'tmp/pre-compiled-block-scope.js': ['src/block-scope/main.js'],
+					'tmp/pre-compiled-promises.js': ['src/promises/main.js']
 				}
 			},
 		}

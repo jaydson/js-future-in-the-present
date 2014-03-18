@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript's future, in the present - ES6 Promises</title>
+
+		<!-- CodeMirror -->
+		<link rel="stylesheet" href="../vendor/codemirror-3.22/lib/codemirror.css">
+		<style type="text/css">
+			.CodeMirror {
+				height: 100%;
+			}
+		</style>
+		<script src="../vendor/codemirror-3.22/lib/codemirror.js"></script>
+		<script src="../vendor/codemirror-3.22/mode/javascript/javascript.js"></script>
+		<script src="../main.js"></script>
+
+		<!-- Compiled with traceur -->
+		<script src="/dist/promises/compiled.js"></script>
+	</head>
+	<body>
+		<h1>ES6 Promises</h1>
+		<textarea id="code">
+function async() {
+	let promise = new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve('Promises are awesome!');
+		}, 100);
+	});
+	return promise;
+}
+
+async()
+	.then(function (data) {
+		console.log(data);
+	},
+	function (err) {
+		console.log(err);
+	});
+		</textarea>
+	</body>
+</html>

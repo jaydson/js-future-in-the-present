@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript's future, in the present - ES6 arrows example</title>
+
+		<!-- CodeMirror -->
+		<link rel="stylesheet" href="../vendor/codemirror-3.22/lib/codemirror.css">
+		<style type="text/css">
+			.CodeMirror {
+				height: 100%;
+			}
+		</style>
+		<script src="../vendor/codemirror-3.22/lib/codemirror.js"></script>
+		<script src="../vendor/codemirror-3.22/mode/javascript/javascript.js"></script>
+		<script src="../main.js"></script>
+
+		<!-- Compiled with traceur -->
+		<script src="/dist/parameters/compiled.js"></script>
+	</head>
+	<body>
+		<h1>ES6 parameters</h1>
+		<textarea id="code">
+/* Rest parameters */
+function sortRestArgs(...theArgs) {
+	var sortedArgs = theArgs.sort();
+	return sortedArgs;
+}
+console.log(sortRestArgs(10,4,1,2,3));
+
+/* Spread parameters */
+function f(x, y, z) {
+	console.log(x,y,z);
+}
+var args = [0, 1, 2];
+f(...args);
+
+/* Default paramaters */
+function foo(bar='baz') {
+	console.log(bar);
+}
+foo();
+		</textarea>
+	</body>
+</html>

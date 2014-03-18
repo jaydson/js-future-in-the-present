@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Module</title>
+	<title>JavaScript's future, in the present - ES6 modules</title>
+
+	<!-- CodeMirror -->
+	<link rel="stylesheet" href="../vendor/codemirror-3.22/lib/codemirror.css">
+	<style type="text/css">
+		.CodeMirror {
+			height: 100%;
+		}
+	</style>
+	<script src="../vendor/codemirror-3.22/lib/codemirror.js"></script>
+	<script src="../vendor/codemirror-3.22/mode/javascript/javascript.js"></script>
 	<script src="../../src/lib/traceur.js"></script>
 	<script src="../../src/lib/es6-module-loader.js"></script>
+	<script src="../main.js"></script>
 </head>
 <body>
+	<h1>ES6 Modules</h1>
+	<textarea id="code">
+/* Index */
+System.import('lib/crapmath').then(function(m) {
+	var crapmath = new m.CrapMath();
+	console.log(crapmath);
+	console.log(crapmath.awesomePlus(2,2));
+}, function(e) {
+	console.log(e);
+});
+
+/* module lib/crapmath */
+export class CrapMath {
+	constructor() {
+		console.log('this is an es6 module!');
+	}
+
+	awesomePlus(n1, n2) {
+		return n1 + n2;
+	}
+}
+	</textarea>
 	<script>
 		System.import('lib/crapmath').then(function(m) {
 			var crapmath = new m.CrapMath();

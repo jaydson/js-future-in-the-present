@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript's future, in the present - ES6 arrows example</title>
+
+		<!-- CodeMirror -->
+		<link rel="stylesheet" href="../vendor/codemirror-3.22/lib/codemirror.css">
+		<style type="text/css">
+			.CodeMirror {
+				height: 100%;
+			}
+		</style>
+		<script src="../vendor/codemirror-3.22/lib/codemirror.js"></script>
+		<script src="../vendor/codemirror-3.22/mode/javascript/javascript.js"></script>
+		<script src="../main.js"></script>
+
+		<!-- Compiled with traceur -->
+		<script src="/dist/block-scope/compiled.js"></script>
+	</head>
+	<body>
+		<h1>ES6 block scope</h1>
+		<textarea id="code">
+/* Let */
+for (var i = 0; i < 3; i++) {
+  let j = i * i;
+  console.log(j); // Works
+}
+console.log(j); // Fail
+
+/* Const */
+let π = 3.14;
+console.log(π);
+
+try {
+	π += 1;
+} catch (constError) {
+	console.log(constError);
+}
+		</textarea>
+	</body>
+</html>
