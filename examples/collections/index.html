@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>JavaScript's future, in the present - ES6 arrows example</title>
+		<title>JavaScript's future, in the present - ES6 collections example</title>
 
 		<!-- CodeMirror -->
 		<link rel="stylesheet" href="../vendor/codemirror-3.22/lib/codemirror.css">
@@ -15,26 +15,13 @@
 		<script src="../main.js"></script>
 
 		<!-- Compiled with traceur -->
-		<script src="/dist/arrows/compiled.js"></script>
+		<script src="/dist/collections/compiled.js"></script>
 	</head>
 	<body>
-		<h1>ES6 arrows</h1>
+		<h1>ES6 collections</h1>
 		<textarea id="code">
-let myArrowFn = x => x + 1;
-console.log(myArrowFn(10));
-
-// Examples from MDN https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/arrow_functions
-let simple = a => a > 15 ? 15 : a; 
-console.log(simple(20));
-
-let complex = (a, b) => {
-    if (a > b) {
-        return a;
-    } else {
-        return b;
-    }
-};
-console.log(complex(20,15));
+var items = new Set([1, 2, 3, 4, 5, 5, 5, 5]);
+console.log(items.size);
 		</textarea>
 	</body>
 </html>

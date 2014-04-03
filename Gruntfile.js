@@ -39,6 +39,10 @@ module.exports = function (grunt) {
 			promises : {
 				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-promises.js'],
 				dest: 'dist/promises/compiled.js'
+			},
+			collections : {
+				src: ['src/lib/traceur-runtime.js','tmp/pre-compiled-collections.js'],
+				dest: 'dist/collections/compiled.js'
 			}
 		},
 
@@ -54,7 +58,8 @@ module.exports = function (grunt) {
                 	'dist/template-strings/compiled-min.js': ['dist/template-strings/compiled.js'],
                 	'dist/parameters/compiled-min.js': ['dist/parameters/compiled.js'],
                 	'dist/block-scope/compiled-min.js': ['dist/block-scope/compiled.js'],
-                	'dist/promises/compiled-min.js': ['dist/promises/compiled.js']
+                	'dist/promises/compiled-min.js': ['dist/promises/compiled.js'],
+                	'dist/collections/compiled-min.js': ['dist/collections/compiled.js']
                 }
             }
         },
@@ -75,7 +80,8 @@ module.exports = function (grunt) {
 					'tmp/pre-compiled-template-strings.js': ['src/template-strings/main.js'],
 					'tmp/pre-compiled-parameters.js': ['src/parameters/main.js'],
 					'tmp/pre-compiled-block-scope.js': ['src/block-scope/main.js'],
-					'tmp/pre-compiled-promises.js': ['src/promises/main.js']
+					'tmp/pre-compiled-promises.js': ['src/promises/main.js'],
+					'tmp/pre-compiled-collections.js': ['src/collections/main.js']
 				}
 			},
 		}
