@@ -9,7 +9,7 @@ http://www.2ality.com/2014/05/es6-array-methods.html
 http://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases  
 https://github.com/facebook/jstransform/  
 http://sett.ociweb.com/sett/settApr2014.html  
-why-class-doesnt-mean-what-you-think-it-means/  
+http://infrequently.org/2011/09/why-class-doesnt-mean-what-you-think-it-means/  
 http://addyosmani.com/blog/author-in-es6-transpile-to-es5-as-a-build-step-a-workflow-for-grunt/  
 http://addyosmani.com/blog/a-few-new-things-coming-to-javascript/  
 https://github.com/tc39/ecma262  
