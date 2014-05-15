@@ -4,6 +4,18 @@ js-future-in-the-present
 JavaScript's future in the present  
 
 Main resources:  
+https://github.com/ericdouglas/ES6-Learning  
+http://www.2ality.com/2014/05/es6-array-methods.html  
+http://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases  
+https://github.com/facebook/jstransform/  
+http://sett.ociweb.com/sett/settApr2014.html  
+why-class-doesnt-mean-what-you-think-it-means/  
+http://addyosmani.com/blog/author-in-es6-transpile-to-es5-as-a-build-step-a-workflow-for-grunt/  
+http://addyosmani.com/blog/a-few-new-things-coming-to-javascript/  
+https://github.com/tc39/ecma262  
+http://www.2ality.com/2014/04/required-parameters-es6.html  
+http://tobyho.com/2013/06/16/what-are-generators/  
+http://addyosmani.com/blog/tracking-es6-support/  
 http://guybedford.com/es6-modules-today  
 http://square.github.io/es6-module-transpiler/  
 http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts  
@@ -27,7 +39,7 @@ http://ariya.ofilabs.com/tag/es6
 http://www.html5rocks.com/en/tutorials/es6/promises/  
 
 Arrows  
-http://www.nczonline.net/blog/2013/09/10/understanding-ecmascript-6-arrow-functions/  
+http://www.nczonline.net/blog/2013/09/10/unde/i18n-with-es6-template-strings  
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/arrow_functions  
 
 Tools  
@@ -42,6 +54,11 @@ https://github.com/paulmillr/es6-shim
 https://github.com/aaronfrost/grunt-traceur  
 https://sublime.wbond.net/packages/JavaScriptNext%20-%20ES6%20Syntax  
 
+
+Vídeos  
+http://tagtree.tv/ecmascript-6-episode-1  
+http://tagtree.tv/ecmascript-6-episode-2  
+http://tagtree.tv/ecmascript-6-episode-3  
 
 Online examples:  
 http://www.es6fiddle.net/hrwzbik7/  
